@@ -1,0 +1,21 @@
+{
+  "name": "portr",
+  "version": "0.0.1",
+  "description": "Check if port is available, otherwise suggest nearby",
+  "main": "index.js",
+  "scripts": {
+    "start": "node test.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imlinus/Portr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imlinus/Portr/issues"
+  },
+  "homepage": "https://github.com/imlinus/Portr#readme"
+}
