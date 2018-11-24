@@ -10,20 +10,27 @@ Note: This is version `0.0.2`, though it seems to work quite nicely.
 $ npm i -S portr
 ```
 
+### Use
 ```js
 const portr = require('portr')
 const port = 1234
 
 portr(port).then(port => {
-  console.log('First available port', port) // 1235
+  console.log(port) // 1235
 })
 ```
 
-Normally it checks the assigned port, plus the next ascending 5 ones.
+It resolves on the first available port. If the port you want is clear, it'll return that port.
+
+Normally it checks the assigned port, and the next ascending five ports.
 
 Though you can change the limit by simply adding another parameter.
 
-I.e. `portr(8080, 20)`
+```js
+portr(port, 20).then(port => {
+  console.log(port) // 1235
+})
+```
 
 
 Cheers,
