@@ -4,14 +4,12 @@ const portr = (port, limit) => {
   return new Promise(resolve => {
     const maxPort = port + (limit || 5)
 
-    do {
+    for (port <= maxPort - 1; port++) {
       test(port).then(port => {
         // Resolve on the first available port
         if (port.constructor === Number) resolve(port)
       })
-
-      port++
-    } while (port <= maxPort - 1)
+    }
   })
 }
 
