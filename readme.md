@@ -1,8 +1,6 @@
 # Portr
 
-🌌🚪 Check if port is available, otherwise suggest nearby
-
-Note: This is version `0.0.2`, though it seems to work quite nicely.
+🌌🚪 Check if port is available, otherwise suggest nearby.
 
 
 ### Setup
