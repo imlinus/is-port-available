@@ -1,10 +1,11 @@
 {
   "name": "portr",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Check if port is available, otherwise suggest nearby",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "lestr"
+    "start": "node test.js --input-type=module"
   },
   "repository": {
     "type": "git",
@@ -16,8 +17,5 @@
   "bugs": {
     "url": "https://github.com/imlinus/Portr/issues"
   },
-  "homepage": "https://github.com/imlinus/Portr#readme",
-  "devDependencies": {
-    "lestr": "^0.1.2"
-  }
+  "homepage": "https://github.com/imlinus/Portr#readme"
 }
