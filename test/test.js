@@ -1,12 +1,12 @@
-import portr from './index.js'
+import isPortAvailable from './../source/index.js'
 
 const checkPort = async port => {
   try {
-    const available = await portr(port)
+    const available = await isPortAvailable(port)
     console.log(available)
   } catch (error) {
     console.error(error)
   }
 }
 
-checkPort(8080)
+checkPort(8000)

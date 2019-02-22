@@ -1,21 +1,10 @@
 {
-  "name": "portr",
-  "version": "1.0.0",
-  "description": "Check if port is available, otherwise suggest nearby",
+  "name": "@imlinus/is-port-available",
+  "version": "0.1.0",
   "type": "module",
-  "main": "index.js",
+  "main": "source/index.js",
+  "license": "0BSD",
   "scripts": {
-    "start": "node test.js --input-type=module"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/imlinus/Portr.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/imlinus/Portr/issues"
-  },
-  "homepage": "https://github.com/imlinus/Portr#readme"
+    "test": "node test/test.js --input-type=module"
+  }
 }

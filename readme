@@ -1,0 +1,19 @@
+
+▀ █▀   █▀█ █▀█ █▀█ ▀█▀   ▄▀█ █ █ ▄▀█ ▀ █  ▄▀█ █▄▄ █  █▀█
+█ ▄█   █▀▀ █▄█ █    █    █▀█ ▀▄▀ █▀█ █ █▄ █▀█ █▄█ █▄ █▄▄
+
+Checks if port is available, otherwise suggests nearby
+
+```
+import http from 'http'
+import isPortAvailable from './modules/is-port-available/source/index.js'
+
+class Server {
+  constructor () {}
+
+  async init (port = 1337) {
+    const availablePort = await isPortAvailable(port)
+    http.listen(availablePort)
+  }
+}
+```
